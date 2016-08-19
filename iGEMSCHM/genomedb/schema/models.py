@@ -8,8 +8,49 @@ class Species(models.Model):
     name = models.CharField(max_length=200)
     
 class Accession(models.Model):
-    key_assembly = models.CharField(max_length=200)
+    assembly_key = models.CharField(max_length=200)
     name = models.CharField(max_length=200)
-    species_key = Species.key.filter(max_length=200)
+    species_key = models.CharField(max_length=200)
  
+class Gene(models.Model):
+    key = models.CharField(max_length=200)
+    name = models.CharField(max_length=200)
+    species_key = models.CharField(max_length=200)
+    accession_key = models.CharField(max_length=200)
+    strand = models.CharField(max_length=200)
+    start = models.IntegerField()
+    stop = models.IntegerField()
+    genebank_annotation = models.CharField(max_length=200)
+    cluster_information = models.CharField(max_length=200)
+    operon_key = models.CharField(max_length=200)
+    gene_order = models.CharField(max_length=200)
+    
+class Operon_Database(models.Model):
+    key = models.CharField(max_length=200)
+    
+    kegg_orthology_ID = models.CharField(max_length=200)
+    
+    species_key = models.CharField(max_length=200)
+    
+    operon_name = models.CharField(max_length=200)
+    
+    annotation = models.CharField(max_length=200)
+
+class HMM_Output(models.Model):
+    key = models.CharField(max_length=200)
+    
+    accession_key = models.CharField(max_length=200)
+    
+    species_key = models.CharField(max_length=200)
+    
+    start = models.CharField(max_length=200)
+    
+    end = models.CharField(max_length=200)
+    
+    hmm_profile_key = models.CharField(max_length=200)
+
+class HMM_Profile(models.Model):
+    key = models.CharField(max_length=200)
+    
+    name = models.CharField(max_length=200)
     
