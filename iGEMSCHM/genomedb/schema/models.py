@@ -23,7 +23,7 @@ class Gene(models.Model):
     genebank_annotation = models.CharField(max_length=200)
     cluster_information = models.CharField(max_length=200)
     operon_key = models.CharField(max_length=200)
-    gene_order = models.CharField(max_length=200)
+    gene_order = models.IntegerField()
     
 class Operon_Database(models.Model):
     key = models.CharField(max_length=200)
@@ -43,9 +43,9 @@ class HMM_Output(models.Model):
     
     species_key = models.CharField(max_length=200)
     
-    start = models.CharField(max_length=200)
+    start = models.IntegerField()
     
-    end = models.CharField(max_length=200)
+    end = models.IntegerField()
     
     hmm_profile_key = models.CharField(max_length=200)
 
