@@ -17,7 +17,7 @@ class Gene(models.Model):
     name = models.CharField(max_length=200)
     species_key = models.CharField(max_length=200)
     accession_key = models.CharField(max_length=200)
-    strand = models.CharField(max_length=200)
+    strand = models.IntegerField()
     start = models.IntegerField()
     stop = models.IntegerField()
     genebank_annotation = models.CharField(max_length=200)
