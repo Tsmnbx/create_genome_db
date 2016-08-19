@@ -9,7 +9,7 @@ from django.contrib import admin
 # Register your models here.
 
 
-from .models import HMM_profile
+from .models import HMM_Profile
 
 from .models import HMM_Output
 
@@ -22,7 +22,7 @@ from .models import Accession
 from .models import Species
 
 
-admin.site.register(HMM_profile)
+admin.site.register(HMM_Profile)
 
 admin.site.register(HMM_Output)
 
