@@ -26,7 +26,7 @@ class Gene(models.Model):
     gene_order = models.IntegerField()
     
 class Operon_Database(models.Model):
-    key = models.CharField(max_length=200, unique=True, unique=True)  # Operon key 3333333333
+    key = models.CharField(max_length=200, unique=True)  # Operon key 3333333333
     
     kegg_orthology_ID = models.CharField(max_length=200, unique=True)
     
