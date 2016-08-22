@@ -81,6 +81,7 @@ DATABASES = {
         'USER': 'igem',
         'PASSWORD': 'neuralnets123',
         'HOST': '209.141.162.226',
+        'PORT': '5432',
     }
 }
 
