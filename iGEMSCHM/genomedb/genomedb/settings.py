@@ -77,10 +77,11 @@ WSGI_APPLICATION = 'genomedb.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgresDB',
+        'NAME': 'genedb',
         'USER': 'igem',
         'PASSWORD': 'neuralnets123',
-        'HOST': '209.141.162.226',
+         #'HOST': '209.141.162.226',
+        'HOST': '104.171.61.38',
         'PORT': '5432',
     }
 }
