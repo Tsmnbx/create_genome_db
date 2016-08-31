@@ -33,8 +33,6 @@ class Gene(models.Model):
     strand = models.CharField(max_length=200, blank=True)
     start = models.IntegerField(null=True)
     stop = models.IntegerField(null=True)
-    genebank_annotation = models.CharField(max_length=200, blank=True)
-    cluster_information = models.CharField(max_length=200, blank=True)
     operon_model = models.ForeignKey(Operon_Database, null=True, on_delete=models.SET_NULL)
     gene_order = models.IntegerField(null=True)
     protein_product = models.CharField(max_length=200, blank=True)

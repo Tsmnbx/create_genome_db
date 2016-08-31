@@ -73,8 +73,6 @@ for locus_id in range(0, num_of_locus):
             g.strand = strand
             g.start = start
             g.stop = end
-            #g.genebank_annotation =
-            #g.cluster_information =
             #g.operon_model =
             #g.gene_order =
             g.protein_product = prod
