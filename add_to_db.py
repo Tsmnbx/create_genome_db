@@ -31,7 +31,7 @@ for locus_id in range(0, num_of_locus):
     
     # Adding these values to the Species Model Fields
     s = Species()
-    s.key =
+    s.key = 1
     s.name = sname
     s.subspecies = sub_species
     s.strain = strain
@@ -67,15 +67,15 @@ for locus_id in range(0, num_of_locus):
             g.name = gname
             g.codon_start = codstart
             g.gene_synonym = genesym
-            g.species_model =
-            g.accession_model =
-            g.strand =
+            g.species_model = 1 #will change for list of species
+            #g.accession_model = 
+            g.strand = strand
             g.start = start
             g.stop = end
-            g.genebank_annotation =
-            g.cluster_information =
-            g.operon_model =
-            g.gene_order =
+            #g.genebank_annotation =
+            #g.cluster_information =
+            #g.operon_model =
+            #g.gene_order =
             g.protein_product = prod
             g.protein_id = proteinid
             g.function = func
