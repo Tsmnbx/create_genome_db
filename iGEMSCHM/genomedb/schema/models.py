@@ -29,6 +29,7 @@ class Gene(models.Model):
     gene_synonym = ArrayField(models.CharField(max_length=200, blank=True), null=True)
     species_model = models.ForeignKey(Species, null=True, on_delete=models.CASCADE) #SpeciesKey 1111111
     accession_model = models.ForeignKey(Accession, null=True, on_delete=models.SET_NULL) #AssemblyName 22222
+    codon_start = models.IntegerField(null=True)
     strand = models.CharField(max_length=200, blank=True)
     start = models.IntegerField(null=True)
     stop = models.IntegerField(null=True)
