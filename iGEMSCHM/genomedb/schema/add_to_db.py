@@ -1,5 +1,6 @@
 from Bio import SeqIO
 from parse_features import *
+import models.py
 
 file_name = "GCA_000009145.1_ASM914v1_genomic.gbff"
 
@@ -31,7 +32,7 @@ for locus_id in range(0, num_of_locus):
     
     # Adding these values to the Species Model Fields
     s = Species()
-    s.key = 1
+    s.key = 1 # will change when dealing with list
     s.name = sname
     s.subspecies = sub_species
     s.strain = strain
@@ -87,5 +88,7 @@ for locus_id in range(0, num_of_locus):
             g.translation = trans
             g.key = gene_key_count
             gene_key_count =+1
+            
+    #Gene.save()
             
             
