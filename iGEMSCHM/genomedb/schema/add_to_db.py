@@ -69,7 +69,7 @@ for locus_id in range(0, num_of_locus):
             g.codon_start = codstart
             g.gene_synonym = genesym
             g.species_model = 1 #will change for list of species
-            #g.accession_model = 
+            g.accession_model = 1 #will change for list of species
             g.strand = strand
             g.start = start
             g.stop = end
